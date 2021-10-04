@@ -16,5 +16,6 @@ ENV NODE_ENV production
 RUN yarn install --prod --frozen-lockfile && yarn cache clean
 
 COPY --from=build /app/dist /app/dist
+COPY --from=build /app/conf.d /app/conf.d
 
 CMD ["node", "--enable-source-maps", "--unhandled-rejections=strict", "/app/dist/server/index.js"]
