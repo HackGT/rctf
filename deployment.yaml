@@ -6,7 +6,7 @@ wants:
   postgres: true
 
 # secrets:
-    - 
+#    - 
 #   - SECRET
 #   - GROUND_TRUTH_ID
 #   - GROUND_TRUTH_SECRET
