@@ -17,8 +17,8 @@ secrets:
 # health:
 #   path: /status
 
-# env:
-#   RCTF_REDIS_URL
+env:
+  RCTF_CONF_PATH: /app/conf.d
 #   RCTF_REDIS_HOST
   
 #   GROUND_TRUTH_URL: https://login.hack.gt
