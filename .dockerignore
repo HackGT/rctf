@@ -7,7 +7,6 @@ yarn-error.log*
 /dist
 /.env
 /data
-/conf.d/*
 !/conf.d/.keep
 
 # Upload provider dir
