@@ -5,7 +5,8 @@ git:
 wants:
   postgres: true
 
-# secrets:
+secrets:
+  - RCTF_REDIS_URL
 #    - 
 #   - SECRET
 #   - GROUND_TRUTH_ID
