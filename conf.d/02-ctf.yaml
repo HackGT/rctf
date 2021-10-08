@@ -2,6 +2,11 @@ origin: http://127.0.0.1:8080
 divisions:
   open: Open
 defaultDivision: open 
+divisionACLs:
+  - match: any
+    value: ''
+    divisions:
+      - open
 tokenKey: 'GLH2/aDxGAsH+lnBcvrFFyfYacr+3ANpQtJcWmE6SbY='
 startTime: 1633307099000
 endTime: 1633911899000
