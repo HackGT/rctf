@@ -7,7 +7,8 @@ wants:
 
 secrets:
   - RCTF_REDIS_URL
-#    - 
+  - RCTF_DATABASE_URL
+    #    - 
 #   - SECRET
 #   - GROUND_TRUTH_ID
 #   - GROUND_TRUTH_SECRET
