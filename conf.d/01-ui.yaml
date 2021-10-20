@@ -3,5 +3,5 @@ faviconUrl: "https://2021.hack.gt/final.f92a9809.png"
 meta:
   description: 'THE HackGT 8 Official CTF'
   imageUrl: 'https://2021.hack.gt/final.f92a9809.png'
-homeContent: 'The official CTF for HackGT 8. Problems submitted by GreyHat, Praetorian, and the NSA.'
+homeContent: 'The official CTF for HackGT 8 X GreyHat. Problems submitted by GreyHat, Praetorian, and the NSA. You may have up to 5 people per team and only up to those 5 members will be eligible for HexLab points. Flags will be mostly in the format hackgt8{secret_message} unless specifically mentioned otherwise.'
 
