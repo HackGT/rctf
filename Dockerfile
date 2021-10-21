@@ -18,4 +18,5 @@ RUN yarn install --prod --frozen-lockfile && yarn cache clean
 COPY --from=build /app/dist /app/dist
 COPY --from=build /app/conf.d /app/conf.d
 
+EXPOSE 3000
 CMD ["node", "--enable-source-maps", "--unhandled-rejections=strict", "/app/dist/server/index.js"]
