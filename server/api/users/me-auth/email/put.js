@@ -7,8 +7,15 @@ import * as util from '../../../../util'
 import * as auth from '../../../../auth'
 import * as database from '../../../../database'
 import { sendVerification } from '../../../../email'
+import { getRegistrationData } from '../../../registration'
+import dotenv from "dotenv";
+
+dotenv.config();
 
 const recaptchaEnabled = util.recaptcha.checkProtectedAction(util.recaptcha.RecaptchaProtectedActions.setEmail)
+
+const REGISTRATION_URL = process.env.REGISTRATION_URL || 'https://registraion.2021.hack.gt/login';
+const REGISTRATION_AUTH_KEY = process.env.REGISTRATION_AUTH_KEY || 'uh oh stinky error code';
 
 export default {
   method: 'PUT',
@@ -36,6 +43,13 @@ export default {
     const email = util.normalize.normalizeEmail(req.body.email)
     if (!emailValidator.validate(email)) {
       return responses.badEmail
+    }
+
+    const userData = getRegistrationData(email, REGISTRATION_URL, REGISTRATION_AUTH_KEY)
+    console.log(userData)
+    if (!userData) {
+
+      return response.badEmailNotAccepted;
     }
 
     if (config.email) {

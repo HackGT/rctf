@@ -35,6 +35,10 @@ export const responseList = {
     status: 400,
     message: 'The email address is malformed.'
   },
+  badEmailNotAccepted: {
+    status: 400,
+    message: 'The email address is not registered with HackGT.'
+  },
   badCompetitionNotAllowed: {
     status: 403,
     message: 'You are not allowed to join this CTF.'

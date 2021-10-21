@@ -8,6 +8,8 @@ wants:
 secrets:
   - RCTF_REDIS_URL
   - RCTF_DATABASE_URL
+  - REGISTRATION_URL
+  - REGISTRATION_AUTH_KEY
     #    - 
 #   - SECRET
 #   - GROUND_TRUTH_ID
