@@ -1,4 +1,4 @@
-origin: http://127.0.0.1:3000
+origin: ctf.2021.hack.gt
 divisions:
   open: Open
 defaultDivision: open 
